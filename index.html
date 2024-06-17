@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script defer src="./face-api.min.js"></script>
+        <script defer src="./script.js"></script>
+        <style type="text/css">
+            body{
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            canvas{
+                position: absolute;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- Hello World! -->
+    <video id="video" width="720" height="560" autoplay muted></video>
+    <!-- <div id="myc">Hello</div> -->
+     <button onclick="start(true)" class="btn text-white bg-success">Start</button>
+     <button onclick="start(false)" class="btn text-white bg-danger">End</button>
+</body>
+
+</html>
